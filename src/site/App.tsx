@@ -1419,6 +1419,18 @@ export function App() {
             </div>
           </section>
 
+          <section className="card video-card" id="video">
+            <div className="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/suRtn-Jymzg?rel=0"
+                title="5D Chess benchmark"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </section>
+
           <section className="card" id="games">
             <div className="section-heading section-heading--stack">
               <div>
