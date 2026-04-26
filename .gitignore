@@ -1,0 +1,23 @@
+node_modules/
+dist/
+coverage/
+logs/
+nohup.out
+
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+api.txt
+
+external/
+alphazero5d/
+
+Game Arena _ Kaggle.html
+SpatialBench - AI Spatial Reasoning Benchmark.html
+
+public/generated/archive/
+public/generated/debug/
+public/generated/benchmark-preview.json
+benchmark-output/

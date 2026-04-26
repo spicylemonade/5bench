@@ -1,0 +1,33 @@
+{
+  "name": "fivebench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "bench": "tsx scripts/run-benchmark.ts",
+    "bench:smoke": "tsx scripts/run-benchmark.ts --preset smoke",
+    "bench:pilot": "tsx scripts/run-benchmark.ts --preset pilot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "FiveBench v1: a static 5D chess benchmark for frontier LLMs",
+  "dependencies": {
+    "5d-chess-js": "^1.2.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.8"
+  }
+}
