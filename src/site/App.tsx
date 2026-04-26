@@ -13,8 +13,9 @@ import {
 import type { GridBoard, MultiverseGrid } from "../lib/chess-browser";
 import type { BenchmarkReport, GameRecord } from "../lib/types";
 
-const REPORT_PATH = "/generated/benchmark-latest.json";
-const PREVIEW_REPORT_PATH = "/generated/benchmark-preview.json";
+const BASE_URL = import.meta.env.BASE_URL ?? "/";
+const REPORT_PATH = `${BASE_URL}generated/benchmark-latest.json`.replace(/\/+/g, "/");
+const PREVIEW_REPORT_PATH = `${BASE_URL}generated/benchmark-preview.json`.replace(/\/+/g, "/");
 const MISSING_REPORT_MESSAGE =
   "No generated benchmark report found yet. Run `npm run bench:smoke` or `npm run bench` first.";
 
